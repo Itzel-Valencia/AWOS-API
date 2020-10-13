@@ -19,6 +19,8 @@ class CreateAlumnosTable extends Migration
             $table->string('apellido');
             $table->string('correo');
             $table->integer('edad');
+            $table->unsignedInteger('materias_id')->unsigned();
+            $table->foreign('materias_id')->references('id')->on('materias');
             $table->timestamps();
         });
     }

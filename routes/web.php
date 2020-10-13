@@ -16,8 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('Helloworld', function () {
-     return view('Helloworld');
-    
-    
-});
+//Rutas Materias
+Route::resorce('/helloworld', '/Materias/controllerMaterias');
